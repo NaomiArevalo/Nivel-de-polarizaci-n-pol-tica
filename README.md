@@ -11,13 +11,18 @@ https://docs.google.com/forms/d/e/1FAIpQLSfZObwaPmOcZU-9mE5oJXg7K7vU7cUr6A2FP39R
 # Código que usé para generar el trabajo
 
 Primero cargué las librerías necesarias
+
 library(dplyr)
+
 library(ggplot2)
+
 library(ggcorrplot)
+
 
 # ----------------------------------------------------------
 # Datos para la data.frame
 # ----------------------------------------------------------
+
 datos <- data.frame(
   Nivel_polarizacion = c(8,1,3,1,6,8,1,5,10,6,4,3,1,1,2,5,7,1,1,3,1,1,1,1,1,5,6,1,4,3,5,5,7,1,1),
   Tiempo_redes = c(6,3,5,3,6,8,9,6,3,3,2,10,4,6,3,2.5,6,6,2,2,1,4,4,4,5,3,1,2,0,6,2,5,1.5,2,10),
@@ -34,6 +39,7 @@ datos <- data.frame(
 # ----------------------------------------------------------
 #Limpieza de datos
 # ----------------------------------------------------------
+
 # Excluí la variable del genero porque es categórico 
 
 datos_clean <- datos %>%
@@ -48,6 +54,7 @@ glimpse(datos_clean)
 # ----------------------------------------------------------
 # Matriz de correlación
 # ----------------------------------------------------------
+
 # Calculamos correlación de Pearson
 
 corr_polarizacion <- cor(datos_clean, use = "pairwise.complete.obs") %>% round(2)
@@ -60,7 +67,8 @@ ggcorrplot(corr_polarizacion, type = "lower", lab = TRUE, show.legend = TRUE) +
 
 # ----------------------------------------------------------
 # (4) Gráfico de dispersión: 
-# ----------------------------------------------------------
+# ----------------------------------------------------------}
+
 # Relación entre Nivel de polarización y Tiempo en redes sociales
 
 
@@ -99,9 +107,12 @@ summary(modelo)
 
 <img width="864" height="453" alt="Correlación" src="https://github.com/user-attachments/assets/da96babe-2975-4d6d-9419-7ed066403e53" />
 
+La gráfica nos permite ver que existe una correlación moderada positiva entre el nivel de polarización y el refuerzo en redes sociales, por lo que, las personas que reciben más refuerzo de sus ideas en redes sociales tienden a tener mayor nivel de polarización. Mientras que, la variable dependiente mantiene una correlación débil o casi nula con las demás variables.
+
 # Gráfica del comportamiento de la variable dependiente "nivel de polarización" frente a una independiente "tiempo en redes"
 
 <img width="864" height="453" alt="Relacion" src="https://github.com/user-attachments/assets/f9260d23-9d66-48b4-92b6-dc69768d0320" />
+
 
 # Regresión lineal
 
