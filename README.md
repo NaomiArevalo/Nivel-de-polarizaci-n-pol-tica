@@ -105,6 +105,8 @@ summary(modelo)
 
 # Regresión lineal
 
-<img width="638" height="337" alt="regresion lineal" src="https://github.com/user-attachments/assets/598b60b5-8c10-4c27-9c77-17b76ca01989" />
+<img width="976" height="336" alt="regresion" src="https://github.com/user-attachments/assets/67afcb16-5617-406f-bef1-4addceef78e8" />
 
+El modelo de regresión nos permite ver que ninguna de las variables alcanzó la significancia estadística (p < 0.05), incluyendo la variable de refuerzo de redes que mantenía una correlación moderada con la variable dependiente. Además, podemos observar un p-value de	0.671	lo cual nos remite a afirmar que el modelo no es significativo para predecir los niveles de polarización con esta muestra.
 
+En conclusión en esta muestra, no se encontró evidencia estadística que respalde que las variables analizadas predigan significativamente el nivel de polarización política. 
