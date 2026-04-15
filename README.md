@@ -113,6 +113,7 @@ La gráfica nos permite ver que existe una correlación moderada positiva entre 
 
 <img width="864" height="453" alt="Relacion" src="https://github.com/user-attachments/assets/f9260d23-9d66-48b4-92b6-dc69768d0320" />
 
+La gráfica nos muesta que existe una relación débil negativa (casi nula) de el nivel de polarización y el tiempo que las personas le dedican a las redes sociales.
 
 # Regresión lineal
 
