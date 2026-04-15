@@ -3,7 +3,7 @@
 El objetivo de este trabajo es analizar el nivel de polarización política y las redes sociales, así como otros factores que podrían influir en el aumento de dicho fenómeno.
 
 # Encuesta
-[Link] https://docs.google.com/forms/d/e/1FAIpQLSfZObwaPmOcZU-9mE5oJXg7K7vU7cUr6A2FP39RPx5pS-4pxw/viewform?usp=dialog
+https://docs.google.com/forms/d/e/1FAIpQLSfZObwaPmOcZU-9mE5oJXg7K7vU7cUr6A2FP39RPx5pS-4pxw/viewform?usp=dialog
 
 # Resultados de la encuesta
 [Polarizacion.xlsx](https://github.com/user-attachments/files/26759896/Polarizacion.xlsx)
