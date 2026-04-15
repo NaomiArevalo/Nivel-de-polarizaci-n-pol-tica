@@ -37,7 +37,7 @@ datos <- data.frame(
 )
 
 # ----------------------------------------------------------
-##Limpieza de datos
+## Limpieza de datos
 # ----------------------------------------------------------
 
 ### Excluí la variable del genero porque es categórico 
@@ -48,7 +48,7 @@ datos_clean <- datos %>%
          Diversidad_informacion, Refuerzo_redes, Educacion) %>%
   filter(complete.cases(.))  
 
-###Ver datos limpios
+### Ver datos limpios
 
 glimpse(datos_clean)
 
