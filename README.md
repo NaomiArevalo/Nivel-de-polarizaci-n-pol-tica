@@ -37,10 +37,10 @@ datos <- data.frame(
 )
 
 # ----------------------------------------------------------
-#Limpieza de datos
+##Limpieza de datos
 # ----------------------------------------------------------
 
-# Excluí la variable del genero porque es categórico 
+### Excluí la variable del genero porque es categórico 
 
 datos_clean <- datos %>%
   select(Nivel_polarizacion, Tiempo_redes, Consumo_informacion, 
@@ -48,35 +48,35 @@ datos_clean <- datos %>%
          Diversidad_informacion, Refuerzo_redes, Educacion) %>%
   filter(complete.cases(.))  
 
-#Ver datos limpios
+###Ver datos limpios
 
 glimpse(datos_clean)
 
 # ----------------------------------------------------------
-# Matriz de correlación
+## Matriz de correlación
 # ----------------------------------------------------------
 
-# Calculamos correlación de Pearson
+## Calculamos correlación de Pearson
 
 corr_polarizacion <- cor(datos_clean, use = "pairwise.complete.obs") %>% round(2)
 corr_polarizacion
 
-# Visualización con ggcorrplot 
+## Visualización con ggcorrplot 
 ggcorrplot(corr_polarizacion, type = "lower", lab = TRUE, show.legend = TRUE) +
   ggtitle("Matriz de correlación - Polarización política y hábitos de consumo de medios") +
   theme_minimal()
 
 # ----------------------------------------------------------
-# (4) Gráfico de dispersión: 
+## Gráfico de dispersión: 
 # ----------------------------------------------------------}
 
-# Relación entre Nivel de polarización y Tiempo en redes sociales
+### Relación entre Nivel de polarización y Tiempo en redes sociales
 
 
-# Correlación de Pearson entre estas dos variables 
+### Correlación de Pearson entre estas dos variables 
 cor(datos_clean$Nivel_polarizacion, datos_clean$Tiempo_redes, method = "pearson")
 
-# Gráfico de dispersión
+### Gráfico de dispersión
 grafica <- ggplot(datos_clean, aes(x = Tiempo_redes, y = Nivel_polarizacion)) +
   geom_point(size = 3, alpha = 0.7, color = "darkblue") + 
   geom_smooth(method = lm, se = TRUE, color = "red") +
