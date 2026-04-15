@@ -49,6 +49,7 @@ datos_clean <- datos %>%
   filter(complete.cases(.))  
 
 #Ver datos limpios
+
 glimpse(datos_clean)
 
 # ----------------------------------------------------------
